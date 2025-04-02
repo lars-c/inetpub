@@ -1,4 +1,4 @@
-# Output from 'docker-compose run'
+# Output from 'docker-compose up'
 
 
 ```bash
