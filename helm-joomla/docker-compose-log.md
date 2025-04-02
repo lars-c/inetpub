@@ -1,7 +1,7 @@
 # Output from 'docker-compose up'
 
-
-```bash
+```shell
+# Docker Compose Output
 > docker compose up
 [+] Running 5/5
  ✔ Network joomla_joomla_network Created                                                                                                                                                 0.1s 
