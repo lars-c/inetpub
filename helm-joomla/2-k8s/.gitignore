@@ -1,0 +1,10 @@
+# Ignore all yaml files
+*.yaml
+
+# But not these specific ones
+configmap.yaml
+mysql-deployment.yaml
+mysql-pvc.yaml
+mysql-secret.yaml
+mysql-service.yaml
+namespace.yaml
