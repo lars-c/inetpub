@@ -2,11 +2,10 @@
 *.yaml
 
 # But not these specific ones
-configmap.yaml
-mysql-deployment.yaml
-mysql-pvc.yaml
-mysql-secret.yaml
-mysql-service.yaml
-mysql-deployment.yaml
-namespace.yaml
-kustomization.yaml
+!namespace.yaml
+!configmap.yaml
+!mysql-pvc.yaml
+!mysql-secret.yaml
+!mysql-service.yaml
+!mysql-deployment.yaml
+!kustomization.yaml
