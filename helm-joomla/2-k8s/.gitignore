@@ -7,4 +7,6 @@ mysql-deployment.yaml
 mysql-pvc.yaml
 mysql-secret.yaml
 mysql-service.yaml
+mysql-deployment.yaml
 namespace.yaml
+kustomization.yaml
