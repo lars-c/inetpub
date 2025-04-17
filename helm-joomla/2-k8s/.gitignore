@@ -9,4 +9,6 @@
 !mysql-service.yaml
 !mysql-deployment.yaml
 !joomla-service.yaml
+!joomla-pvc.yaml
+!joomla-deployment.yaml
 !kustomization.yaml

@@ -1,0 +1,62 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: joomla
+  namespace: joomla
+  labels:
+    app: joomla
+spec:
+  selector:
+    matchLabels:
+      app: joomla
+      tier: frontend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: joomla
+        tier: frontend
+    spec:
+      volumes:
+        - name: joomla-persistent-storage
+          persistentVolumeClaim:
+            claimName: joomla--data
+      containers:
+      - image: joomla:php8.3-apache
+        name: joomla
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
+        env:
+        - name: JOOMLA_DB_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: joomla
+              key: joomla_db_host
+        - name: JOOMLA_DB_USER
+          valueFrom:
+            configMapKeyRef:
+              name: joomla
+              key: mysql_user
+        - name: JOOMLA_DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: password
+        - name: JOOMLA_DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: joomla
+              key: mysql_database
+        ports:
+        - containerPort: 80
+          name: joomla
+        volumeMounts:
+        - name: joomla-persistent-storage
+          mountPath: /var/www/html
