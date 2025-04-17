@@ -8,4 +8,5 @@
 !mysql-secret.yaml
 !mysql-service.yaml
 !mysql-deployment.yaml
+!joomla-service.yaml
 !kustomization.yaml
