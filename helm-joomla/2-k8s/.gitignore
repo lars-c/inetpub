@@ -12,3 +12,4 @@
 !joomla-pvc.yaml
 !joomla-deployment.yaml
 !kustomization.yaml
+!log-joomla.txt

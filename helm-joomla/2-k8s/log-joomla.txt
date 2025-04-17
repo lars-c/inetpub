@@ -1,0 +1,36 @@
+kubectl logs -n joomla joomla-f555c67fb-26psc       
+========================================================================
+
+[INFO] Joomla not found in /var/www/html - copying now...
+ Complete! Joomla has been successfully copied to /var/www/html
+
+Ensuring Joomla database is present
+[17-Apr-2025 14:33:23 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /makedb.php on line 30
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Connection Error: (2002) Connection refused
+
+MySQL Database Created
+ This server is now configured to run Joomla!
+
+  NOTE: You will need your database server address, database name,
+        and database user credentials to install Joomla.
+
+========================================================================
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.42.0.29. Set the 'ServerName' directive globally to suppress this message
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.42.0.29. Set the 'ServerName' directive globally to suppress this message
+[Thu Apr 17 14:33:48.009838 2025] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.62 (Debian) PHP/8.3.14 configured -- resuming normal operations
+[Thu Apr 17 14:33:48.009875 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

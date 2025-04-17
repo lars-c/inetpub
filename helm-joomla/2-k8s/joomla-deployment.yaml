@@ -22,7 +22,7 @@ spec:
       volumes:
         - name: joomla-persistent-storage
           persistentVolumeClaim:
-            claimName: joomla--data
+            claimName: joomla-data
       containers:
       - image: joomla:php8.3-apache
         name: joomla
