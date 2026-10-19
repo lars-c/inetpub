@@ -5,3 +5,7 @@ Repository include documentation and code snippets for articles published on ine
 ### Joomla Helm chart
 
 Contain files related to creating a basic Helm chart for Joomla
+
+### Power
+
+Basic power measurement and info script for Linux systems
