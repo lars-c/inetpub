@@ -2,10 +2,10 @@
     
 Repository include documentation and code snippets for articles published on inetpub.dk
   
-### Joomla Helm chart
+### helm-joomla
 
 Contain files related to creating a basic Helm chart for Joomla
 
-### Power
+### power
 
 Basic power measurement and info script for Linux systems
